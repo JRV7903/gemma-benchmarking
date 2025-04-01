@@ -1,0 +1,32 @@
+models:
+  - gemma-2b
+  - gemma-7b
+  - mistral-7b
+
+dataset:
+  name: mmlu
+  subsets:
+    - stem
+    - humanities
+    - social_sciences
+    - other
+  num_few_shot_examples: 5
+  max_samples_per_subset: 100
+
+hardware:
+  device: cuda
+  precision: fp16
+
+benchmark:
+  seed: 42
+  num_workers: 4
+  output_dir: results
+  save_predictions: true
+  save_model_outputs: false
+
+evaluation:
+  metrics:
+    - accuracy
+    - f1_score
+  per_category_breakdown: true
+  create_visualizations: true
