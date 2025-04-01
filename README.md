@@ -46,8 +46,6 @@ python scripts/run_benchmark.py
 ```bash
 python notebooks/visualize_results.py
 
-jupyter nbconvert --to notebook --execute notebooks/visualize_results.py
-jupyter notebook notebooks/visualize_results.nbconvert.ipynb
 ```
 
 ## Project Structure
