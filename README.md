@@ -44,7 +44,7 @@ python scripts/run_benchmark.py
 3. Visualize results using the provided script:
 
 ```bash
-python notebooks/visualize_results.py
+jupyter notebook notebooks/visualize_results.ipynb
 
 ```
 
